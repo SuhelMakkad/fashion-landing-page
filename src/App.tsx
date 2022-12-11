@@ -1,7 +1,9 @@
+import Navbar from "./components/Navbar";
+
 const App = () => {
   return (
     <div className="font-poppins">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Navbar />
     </div>
   );
 };
