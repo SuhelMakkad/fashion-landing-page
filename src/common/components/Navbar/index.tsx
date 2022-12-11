@@ -39,7 +39,7 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="flex items-center justify-between py-3 px-5 relative">
+    <nav className="flex items-center justify-between py-3 relative">
       <Logo />
 
       <div className="flex items-center gap-4 justify-between max-lg:flex-row-reverse">
@@ -53,7 +53,7 @@ const Navbar = () => {
           <NavList items={navItems} active={isMenuActive} />
         </div>
 
-        <Button className="ml-auto" intent={"monochrome"} uppercase elevated>
+        <Button className="ml-auto" intent={"monochrome"} size="small" uppercase elevated>
           sign up
         </Button>
       </div>

@@ -3,7 +3,7 @@ import { ButtonHTMLAttributes } from "react";
 import { cva } from "class-variance-authority";
 import type { VariantProps } from "class-variance-authority";
 
-const button = cva(["font-medium", "border", "rounded", "transition"], {
+const button = cva(["font-medium", "border", "transition"], {
   variants: {
     intent: {
       primary: ["bg-blue-500", "text-white", "border-transparent", "hover:bg-blue-600"],
@@ -11,8 +11,9 @@ const button = cva(["font-medium", "border", "rounded", "transition"], {
       monochrome: ["bg-gray-800", "hover:bg-gray-900", "text-white"],
     },
     size: {
-      small: ["text-sm", "py-1", "px-2"],
-      medium: ["text-base", "py-1.5", "px-4"],
+      small: ["text-sm", "py-1", "px-2", "rounded"],
+      medium: ["text-base", "py-1.5", "px-4", "rounded-md"],
+      large: ["text-lg", "py-2.5", "px-6", "rounded-lg"],
     },
     uppercase: {
       true: "uppercase",
