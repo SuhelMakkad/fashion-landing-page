@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 
-import useOnClickOutside from "../../hooks/useOnClickOutside";
+import useOnClickOutside from "@/hooks/useOnClickOutside";
 
 import Logo from "../Logo";
 import Button from "../Button";
