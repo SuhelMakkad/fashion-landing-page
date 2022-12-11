@@ -12,7 +12,7 @@ const button = cva(["font-medium", "border", "rounded", "transition"], {
     },
     size: {
       small: ["text-sm", "py-1", "px-2"],
-      medium: ["text-base", "py-2", "px-4"],
+      medium: ["text-base", "py-1.5", "px-4"],
     },
     uppercase: {
       true: "uppercase",
@@ -38,11 +38,6 @@ const button = cva(["font-medium", "border", "rounded", "transition"], {
     size: "medium",
   },
 });
-
-// py-2 px-4 leading-tight block whitespace-nowrap
-// bg-gray-800 hover:bg-gray-900 transition
-// font-medium rounded text-white uppercase
-//
 
 export interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
