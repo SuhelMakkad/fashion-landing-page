@@ -7,6 +7,7 @@ import path from "path";
 export default defineConfig({
   resolve: {
     alias: {
+      "@/components": path.resolve(__dirname, "./src/common/components"),
       "@/hooks": path.resolve(__dirname, "./src/common/hooks"),
       "@": path.resolve(__dirname, "./src"),
     },

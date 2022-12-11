@@ -1,11 +1,11 @@
-import Navbar from "@/common/components/Navbar";
+import Navbar from "@/components/Navbar";
 
 const App = () => {
   return (
     <div className="font-poppins">
       <Navbar />
 
-      <main>{/* <HeroSEction /> */}</main>
+      <main>{/* <HeroSection /> */}</main>
     </div>
   );
 };

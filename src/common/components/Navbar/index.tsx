@@ -2,9 +2,9 @@ import { useState, useRef } from "react";
 
 import useOnClickOutside from "@/hooks/useOnClickOutside";
 
-import Logo from "../Logo";
-import Button from "../Button";
-import MenuSwitch from "../MenuSwitch";
+import Logo from "@/components/Logo";
+import Button from "@/components/Button";
+import MenuSwitch from "@/components/MenuSwitch";
 import NavList from "./NavList";
 
 const Navbar = () => {
