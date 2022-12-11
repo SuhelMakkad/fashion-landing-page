@@ -50,14 +50,7 @@ export interface ButtonProps
   children: React.ReactNode;
 }
 
-const Button = ({
-  children,
-  intent = "primary",
-  size = "medium",
-  uppercase,
-  elevated,
-  ...props
-}: ButtonProps) => {
+const Button = ({ children, intent, size, uppercase, elevated, ...props }: ButtonProps) => {
   return (
     <button {...props} className={button({ intent, size, uppercase, elevated })}>
       {children}

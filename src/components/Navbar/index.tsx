@@ -1,6 +1,9 @@
-import Button from "../Button";
+import { useState } from "react";
+
 import Logo from "../Logo";
+import Button from "../Button";
 import MenuSwitch from "../MenuSwitch";
+import NavList from "./NavList";
 
 const Navbar = () => {
   const navItems = [
@@ -22,41 +25,27 @@ const Navbar = () => {
     },
   ];
 
+  const [isMenuActive, setIsMenuActive] = useState(false);
+
+  const handleMenuClick = () => {
+    setIsMenuActive((prev) => !prev);
+  };
+
   return (
     <nav className="flex items-center justify-between py-3 px-5 relative">
       <Logo />
 
-      <MenuSwitch />
+      <MenuSwitch
+        className="hidden max-lg:block "
+        active={isMenuActive}
+        onClick={handleMenuClick}
+      />
 
-      <ul
-        className={`
-            flex gap-6 items-center max-lg:items-start max-lg:flex-col max-lg:gap-0
-            max-lg:absolute top-full left-0 right-0 uppercase
-            max-lg:mx-4 max-lg:p-2 max-lg:bg-gray-200
-            rounded
-        `}
-      >
-        {navItems.map((item, index) => (
-          <li key={index} className={`w-full`}>
-            <a
-              className={`hover:bg-gray-100 w-full max-lg:px-4 max-lg:py-2 rounded block`}
-              href={item.href}
-            >
-              {item.label}
-            </a>
-          </li>
-        ))}
+      <NavList items={navItems} active={isMenuActive} />
 
-        <li
-          className={`
-            max-lg:px-4 max-lg:py-2
-        `}
-        >
-          <Button intent={"monochrome"} uppercase elevated>
-            sign up
-          </Button>
-        </li>
-      </ul>
+      <Button intent={"monochrome"} uppercase elevated>
+        sign up
+      </Button>
     </nav>
   );
 };
