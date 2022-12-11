@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+
+import useOnClickOutside from "../../hooks/useOnClickOutside";
 
 import Logo from "../Logo";
 import Button from "../Button";
@@ -26,23 +28,30 @@ const Navbar = () => {
   ];
 
   const [isMenuActive, setIsMenuActive] = useState(false);
+  const menuRef = useRef(null);
 
   const handleMenuClick = () => {
     setIsMenuActive((prev) => !prev);
   };
+
+  useOnClickOutside(menuRef, () => {
+    setIsMenuActive(false);
+  });
 
   return (
     <nav className="flex items-center justify-between py-3 px-5 relative">
       <Logo />
 
       <div className="flex items-center gap-4 justify-between max-lg:flex-row-reverse">
-        <MenuSwitch
-          className="hidden max-lg:block "
-          active={isMenuActive}
-          onClick={handleMenuClick}
-        />
+        <div ref={menuRef}>
+          <MenuSwitch
+            className="hidden max-lg:block "
+            active={isMenuActive}
+            onClick={handleMenuClick}
+          />
 
-        <NavList items={navItems} active={isMenuActive} />
+          <NavList items={navItems} active={isMenuActive} />
+        </div>
 
         <Button className="ml-auto" intent={"monochrome"} uppercase elevated>
           sign up
