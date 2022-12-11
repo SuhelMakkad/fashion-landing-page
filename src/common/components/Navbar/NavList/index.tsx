@@ -6,8 +6,8 @@ import type { VariantProps } from "class-variance-authority";
 const ulList = cva(
   [
     "flex gap-6 items-center max-lg:items-start max-lg:flex-col max-lg:gap-0",
-    "max-lg:absolute top-full left-0 right-0 uppercase",
-    "max-lg:mx-4 max-lg:p-2 max-lg:bg-gray-200",
+    "max-lg:absolute top-16 left-0 right-0 uppercase",
+    "max-lg:mx-4 max-lg:p-2 max-lg:bg-gray-500 max-lg:text-gray-100",
     "rounded",
   ],
   {
@@ -38,7 +38,7 @@ const NavList = ({ items, active, ...props }: NavListProps) => {
       {items.map((item, index) => (
         <li key={index} className={`w-full`}>
           <a
-            className={`max-lg:hover:bg-gray-100 w-full max-lg:px-4 max-lg:py-2 rounded block transition-colors`}
+            className={`max-lg:hover:bg-gray-600 w-full max-lg:px-4 max-lg:py-2 rounded block transition-colors`}
             href={item.href}
           >
             {item.label}
