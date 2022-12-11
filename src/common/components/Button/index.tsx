@@ -11,8 +11,8 @@ const button = cva(["font-medium", "border", "transition"], {
       monochrome: ["bg-gray-800", "hover:bg-gray-900", "text-white"],
     },
     size: {
-      small: ["text-sm", "py-1", "px-2", "rounded"],
-      medium: ["text-base", "py-1.5", "px-4", "rounded-md"],
+      small: ["text-sm", "py-1.5", "px-3", "rounded"],
+      medium: ["text-base", "py-2", "px-4", "rounded-md"],
       large: ["text-lg", "py-2.5", "px-6", "rounded-lg"],
     },
     uppercase: {

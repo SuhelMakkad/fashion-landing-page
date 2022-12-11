@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import BrandStipe from "@/components/BrandStipe";
+import NewArrivals from "@/components/NewArrivals";
 
 const App = () => {
   return (
@@ -11,6 +12,8 @@ const App = () => {
         <HeroSection />
 
         <BrandStipe />
+
+        <NewArrivals />
       </main>
     </div>
   );
