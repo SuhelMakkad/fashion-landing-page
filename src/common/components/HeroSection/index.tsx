@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import { Star } from "@/components/Icons";
+import heroImage from "@/images/hero-img.png";
 
 const HeroSection = () => {
   return (
@@ -31,11 +32,7 @@ const HeroSection = () => {
       </div>
 
       <div className="flex-1 flex relative isolate">
-        <img
-          className="block mx-auto mt-auto max-h-[32rem]"
-          src="/assets/images/hero-img.png"
-          alt="Hero Image"
-        />
+        <img className="block mx-auto mt-auto max-h-[32rem]" src={heroImage} alt="Hero Image" />
 
         <Star className="fill-slate-200 -z-10 absolute top-0 left-1/2" />
         <Star className="fill-slate-200 -z-10 absolute bottom-20 right-0" />

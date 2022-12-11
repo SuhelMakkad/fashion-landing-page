@@ -1,29 +1,36 @@
+import versace from "@/images/brands/versace.png";
+import diesel from "@/images/brands/diesel.png";
+import chanel from "@/images/brands/chanel.png";
+import levis from "@/images/brands/levis.png";
+import fila from "@/images/brands/fila.png";
+import lee from "@/images/brands/lee.png";
+
 const BrandStipe = () => {
   const brands = [
     {
       label: "versace",
-      imgUrl: "/assets/images/brands/versace.png",
+      imgUrl: versace,
     },
 
     {
       label: "diesel",
-      imgUrl: "/assets/images/brands/diesel.png",
+      imgUrl: diesel,
     },
     {
       label: "chanel",
-      imgUrl: "/assets/images/brands/chanel.png",
+      imgUrl: chanel,
     },
     {
       label: "levis",
-      imgUrl: "/assets/images/brands/levis.png",
+      imgUrl: levis,
     },
     {
       label: "fila",
-      imgUrl: "/assets/images/brands/fila.png",
+      imgUrl: fila,
     },
     {
       label: "lee",
-      imgUrl: "/assets/images/brands/lee.png",
+      imgUrl: lee,
     },
   ];
 
@@ -31,7 +38,6 @@ const BrandStipe = () => {
     <section
       className="bg-yellow-300 shadow-yellow-300 shadow-[0_0_0_100vmax]"
       style={{ clipPath: "inset(0 -100vmax)" }}
-      aria-describe="Brands"
     >
       <ul className="flex items-center justify-between gap-10 px-4 py-8 overflow-x-auto disable-scrollbars">
         {brands.map((brand) => (
