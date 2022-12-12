@@ -20,7 +20,7 @@ const AppShowCase = () => {
         </div>
       </div>
 
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <img width={370} src={appImage} alt="Image of the mobile app" />
 
         <BgRing size={"small"} />
