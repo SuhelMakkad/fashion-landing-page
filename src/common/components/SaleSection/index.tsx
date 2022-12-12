@@ -39,7 +39,7 @@ const SaleSection = () => {
         </p>
 
         <div className="mt-4">
-          <Button intent={"monochrome"} size={"large"} uppercase elevated>
+          <Button intent={"monochrome"} size={"large"} elevated>
             Shope Now
           </Button>
         </div>

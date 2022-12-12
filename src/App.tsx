@@ -4,6 +4,7 @@ import BrandStipe from "@/components/BrandStipe";
 import NewArrivals from "@/components/NewArrivals";
 import FavoriteSection from "@/components/FavoriteSection";
 import SaleSection from "@/components/SaleSection";
+import AppShowCase from "@/components/AppShowCase";
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
         <SaleSection />
 
         <FavoriteSection />
+
+        <AppShowCase />
       </main>
     </div>
   );
