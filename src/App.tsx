@@ -5,6 +5,7 @@ import NewArrivals from "@/components/NewArrivals";
 import FavoriteSection from "@/components/FavoriteSection";
 import SaleSection from "@/components/SaleSection";
 import AppShowCase from "@/components/AppShowCase";
+import EmailForm from "@/components/EmailForm";
 
 const App = () => {
   return (
@@ -23,6 +24,8 @@ const App = () => {
         <FavoriteSection />
 
         <AppShowCase />
+
+        <EmailForm />
       </main>
     </div>
   );

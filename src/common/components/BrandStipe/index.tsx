@@ -35,10 +35,7 @@ const BrandStipe = () => {
   ];
 
   return (
-    <section
-      className="bg-yellow-300 shadow-yellow-300 shadow-[0_0_0_100vmax]"
-      style={{ clipPath: "inset(0 -100vmax)" }}
-    >
+    <section className="full-bleed bg-yellow-300 shadow-yellow-300 shadow-[0_0_0_100vmax]">
       <ul className="flex items-center justify-between gap-10 px-4 py-8 overflow-x-auto disable-scrollbars">
         {brands.map((brand) => (
           <li className="w-28 shrink-0" key={brand.label}>

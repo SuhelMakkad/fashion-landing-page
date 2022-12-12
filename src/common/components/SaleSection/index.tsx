@@ -7,9 +7,8 @@ const SaleSection = () => {
     <section
       className={`
 				flex items-center gap-8 max-lg:flex-col-reverse max-lg:mx-auto
-				bg-yellow-300 shadow-yellow-300 shadow-[0_0_0_100vmax] 
+				full-bleed bg-yellow-300 shadow-yellow-300  shadow-[0_0_0_100vmax]
       `}
-      style={{ clipPath: "inset(0px -100vmax)" }}
     >
       <div className="relative">
         <img
