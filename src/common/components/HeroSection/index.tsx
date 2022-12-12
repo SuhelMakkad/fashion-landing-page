@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import BgStar from "@/components/BgStar";
-import heroImage from "@/images/hero-img.png";
+import heroImage from "@/images/hero/1.png";
 
 const HeroSection = () => {
   return (

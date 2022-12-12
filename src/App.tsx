@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import BrandStipe from "@/components/BrandStipe";
 import NewArrivals from "@/components/NewArrivals";
 import FavoriteSection from "@/components/FavoriteSection";
+import SaleSection from "@/components/SaleSection";
 
 const App = () => {
   return (
@@ -15,6 +16,9 @@ const App = () => {
         <BrandStipe />
 
         <NewArrivals />
+
+        <SaleSection />
+
         <FavoriteSection />
       </main>
     </div>

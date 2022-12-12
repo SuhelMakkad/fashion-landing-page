@@ -4,8 +4,8 @@ const Star = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     className={`${className} fill-slate-200 -z-10 absolute`}
-    width="56"
-    height="51"
+    width="45"
+    height="40"
     viewBox="0 0 56 51"
     xmlns="http://www.w3.org/2000/svg"
   >
