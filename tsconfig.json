@@ -18,7 +18,7 @@
     "paths": {
       "@/hooks/*": ["./src/common/hooks/*"],
       "@/components/*": ["./src/common/components/*"],
-      "@/assets/images/*": ["./src/assets/images/*"],
+      "@/images/*": ["./src/assets/images/*"],
       "@/assets/*": ["./src/assets/*"],
       "@/*": ["./src/*"]
     }
