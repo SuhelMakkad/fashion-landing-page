@@ -12,7 +12,7 @@ const productList = cva(["grid", "gap-12", "group", "disable-scrollbars", "overf
   variants: {
     size: {
       small: ["grid-flow-col", "grid-flow-row", "auto-cols-[minmax(15rem,_1fr)]", "small"],
-      medium: ["grid-cols-2", "medium"],
+      medium: ["grid-cols-2", "max-lg:grid-cols-1", "medium"],
     },
   },
   defaultVariants: {
