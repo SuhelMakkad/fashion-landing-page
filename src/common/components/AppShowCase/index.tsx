@@ -4,7 +4,7 @@ import BgRing from "../BgRing";
 
 const AppShowCase = () => {
   return (
-    <section className="flex items-center max-lg:flex-col-reverse justify-around gap-8 max-lg:text-center">
+    <section className="flex items-center max-lg:flex-col-reverse justify-around gap-8 max-lg:text-center overflow-hidden">
       <div className="flex flex-col gap-8">
         <h3 className="text-3xl font-bold">
           DOWNLOAD APP & <br /> GET THE VOUCHER!
@@ -20,7 +20,7 @@ const AppShowCase = () => {
         </div>
       </div>
 
-      <div className="relative overflow-hidden">
+      <div className="relative">
         <img width={370} src={appImage} alt="Image of the mobile app" />
 
         <BgRing size={"small"} />
