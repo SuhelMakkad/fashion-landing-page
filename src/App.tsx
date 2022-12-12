@@ -6,6 +6,7 @@ import FavoriteSection from "@/components/FavoriteSection";
 import SaleSection from "@/components/SaleSection";
 import AppShowCase from "@/components/AppShowCase";
 import EmailForm from "@/components/EmailForm";
+import Footer from "@/components/Footer";
 
 const App = () => {
   return (
@@ -27,6 +28,8 @@ const App = () => {
 
         <EmailForm />
       </main>
+
+      <Footer />
     </div>
   );
 };

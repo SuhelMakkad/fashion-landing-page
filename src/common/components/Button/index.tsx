@@ -6,9 +6,8 @@ import type { VariantProps } from "class-variance-authority";
 const button = cva(["font-medium", "transition"], {
   variants: {
     intent: {
-      primary: ["bg-blue-500", "text-white", "border-transparent", "hover:bg-blue-600"],
-      secondary: ["bg-white", "text-gray-800", "border-gray-400", "hover:bg-gray-100"],
       monochrome: ["bg-gray-800", "hover:bg-gray-900", "text-white"],
+      secondary: ["bg-white", "text-gray-800", "border-gray-400", "hover:bg-gray-100"],
     },
     size: {
       small: ["text-sm", "py-1.5", "px-3", "rounded"],
@@ -17,6 +16,9 @@ const button = cva(["font-medium", "transition"], {
     },
     uppercase: {
       true: "uppercase",
+    },
+    focusOutlined: {
+      true: ["focus-within:outline", "outline-offset-4"],
     },
     elevated: {
       true: [
@@ -27,16 +29,10 @@ const button = cva(["font-medium", "transition"], {
       ],
     },
   },
-  compoundVariants: [
-    {
-      intent: "primary",
-      size: "medium",
-      class: "uppercase",
-    },
-  ],
   defaultVariants: {
-    intent: "primary",
+    intent: "monochrome",
     size: "medium",
+    focusOutlined: false,
   },
 });
 
@@ -46,9 +42,17 @@ export interface ButtonProps
   children: React.ReactNode;
 }
 
-const Button = ({ children, intent, size, uppercase, elevated, ...props }: ButtonProps) => {
+const Button = ({
+  children,
+  intent,
+  size,
+  uppercase,
+  elevated,
+  focusOutlined,
+  ...props
+}: ButtonProps) => {
   return (
-    <button {...props} className={button({ intent, size, uppercase, elevated })}>
+    <button {...props} className={button({ intent, size, uppercase, elevated, focusOutlined })}>
       {children}
     </button>
   );
