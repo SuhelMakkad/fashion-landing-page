@@ -12,11 +12,11 @@ const productList = cva(["grid", "gap-12", "group", "disable-scrollbars", "overf
   variants: {
     size: {
       small: ["grid-flow-col", "grid-flow-row", "auto-cols-[minmax(15rem,_1fr)]", "small"],
-      large: ["grid-cols-2", "large"],
+      medium: ["grid-cols-2", "medium"],
     },
   },
   defaultVariants: {
-    size: "large",
+    size: "small",
   },
 });
 
@@ -30,14 +30,14 @@ const ProductList = ({ products, ...variants }: ProductProps) => {
       {products.map((product) => (
         <li className="flex flex-col gap-4 cursor-pointer">
           <img
-            className="object-cover object-top hover:shadow-2xl transition-shadow rounded-xl group-[.large]:h-80"
+            className="object-cover object-top hover:shadow-2xl transition-shadow rounded-xl group-[.medium]:h-80"
             src={product.imgUrl}
             alt={product.title}
           />
           <div className="flex items-center justify-between p-2">
             <div className="flex flex-col">
               <span className="text-xl">{product.title}</span>
-              <span className="text-md">Explore</span>
+              <span className="text-md">Explore Now!</span>
             </div>
             <Arrow />
           </div>

@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import BrandStipe from "@/components/BrandStipe";
 import NewArrivals from "@/components/NewArrivals";
+import FavoriteSection from "@/components/FavoriteSection";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <BrandStipe />
 
         <NewArrivals />
+        <FavoriteSection />
       </main>
     </div>
   );
