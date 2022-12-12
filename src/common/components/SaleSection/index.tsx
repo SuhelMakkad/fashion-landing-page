@@ -6,13 +6,13 @@ const SaleSection = () => {
   return (
     <section
       className={`
-				flex items-center gap-8 max-lg:flex-col-reverse max-lg:mx-auto
+				flex items-center gap-8 max-lg:flex-col-reverse max-lg:mx-auto max-w-full
 				full-bleed bg-yellow-300 shadow-yellow-300  shadow-[0_0_0_100vmax]
       `}
     >
       <div className="relative">
         <img
-          className="max-lg:max-h-96 drop-shadow-[4rem_3rem_1.5rem_rgba(0,0,0,0.5)]"
+          className="max-lg:max-h-96 max-w-full drop-shadow-[4rem_3rem_1.5rem_rgba(0,0,0,0.5)]"
           src={heroImage}
         />
 
@@ -23,7 +23,11 @@ const SaleSection = () => {
       </div>
 
       <div className="mb-8 mx-auto max-lg:text-center max-lg:mt-12">
-        <h3 className="uppercase text-6xl font-bold leading-tight">
+        <h3
+          className={`
+            text-6xl max-lg:text-5xl max-md:text-4xl font-bold leading-tight
+        `}
+        >
           Payday <br /> Sale Now
         </h3>
 
