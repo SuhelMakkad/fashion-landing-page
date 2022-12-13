@@ -17,3 +17,7 @@
     clip-path: inset(0px -100vmax);
   }
 }
+
+:root {
+  color-scheme: light dark;
+}

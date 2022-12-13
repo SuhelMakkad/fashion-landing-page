@@ -6,7 +6,14 @@ import type { VariantProps } from "class-variance-authority";
 const button = cva(["font-medium", "transition"], {
   variants: {
     intent: {
-      monochrome: ["bg-gray-800", "hover:bg-gray-900", "text-white"],
+      monochrome: [
+        "bg-gray-800",
+        "dark:outline",
+        "dark:outline-2",
+        "dark:outline-white",
+        "hover:bg-gray-900",
+        "text-white",
+      ],
       secondary: ["bg-white", "text-gray-800", "border-gray-400", "hover:bg-gray-100"],
     },
     size: {

@@ -39,7 +39,14 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="flex items-center justify-between py-3 sticky top-0 left-0 right-0 z-10">
+    <nav
+      className={`
+        full-bleed bg-white shadow-white-400  dark:bg-slate-900/75 dark:shadow-slate-900/75 shadow-[0_0_0_100vmax]
+        dark:text-white flex items-center justify-between
+        sticky top-0 left-0 right-0 
+        z-10 py-5 backdrop-blur-md
+      `}
+    >
       <Logo />
 
       <div className="flex items-center gap-4 justify-between max-lg:flex-row-reverse">

@@ -8,6 +8,7 @@ const button = cva(
     "block w-5 h-0.5 bg-gray-900 relative transition-transform",
     "after:absolute after:block after:w-5 after:h-0.5 after:bg-gray-900 after:top-1.5",
     "before:absolute before:block before:w-5 before:h-0.5 before:bg-gray-900 before:-top-1.5",
+    "dark:bg-white dark:after:bg-white dark:before:bg-white",
   ],
   {
     variants: {

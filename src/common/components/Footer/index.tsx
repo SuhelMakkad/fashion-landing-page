@@ -82,7 +82,7 @@ const Footer = () => {
     <footer
       className={`
         flex gap-12 py-12 text-white max-lg:flex-col max-lg:items-center max-lg:text-center
-        full-bleed bg-black shadow-black shadow-[0_0_0_100vmax]
+        full-bleed bg-black shadow-black shadow-[0_0_0_100vmax] dark:bg-gray-900 dark:shadow-gray-900
     `}
     >
       <div className="flex flex-col gap-4">

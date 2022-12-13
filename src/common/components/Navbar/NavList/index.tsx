@@ -9,6 +9,7 @@ const ulList = cva(
     "max-lg:absolute top-16 left-0 right-0",
     "max-lg:mx-4 max-lg:p-2 max-lg:bg-white max-lg:text-gray-800",
     "rounded uppercase max-lg:shadow-xl origin-top max-lg:animate-slide-in",
+    "max-lg:dark:bg-slate-800 max-lg:dark:text-white",
   ],
   {
     variants: {
@@ -41,6 +42,7 @@ const NavList = ({ items, active, ...props }: NavListProps) => {
             className={`
               block w-full rounded transition-colors relative
               max-lg:hover:bg-gray-200 max-lg:px-4 max-lg:py-2
+              max-lg:dark:hover:bg-slate-900
             `}
             href={item.href}
           >

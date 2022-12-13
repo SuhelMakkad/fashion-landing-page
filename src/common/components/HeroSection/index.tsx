@@ -9,6 +9,7 @@ const HeroSection = () => {
         flex gap-2 max-lg:block
         px-12 pt-12
         bg-slate-100 rounded-xl
+        dark:bg-slate-700
     `}
     >
       <div className="flex gap-4 flex-col flex-1 max-lg:text-center">

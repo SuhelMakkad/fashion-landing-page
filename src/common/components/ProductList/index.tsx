@@ -34,7 +34,7 @@ const ProductList = ({ products, ...variants }: ProductProps) => {
             src={product.imgUrl}
             alt={product.title}
           />
-          <div className="flex items-center justify-between p-2">
+          <div className="flex items-center justify-between dark:text-white p-2">
             <div className="flex flex-col">
               <span className="text-xl">{product.title}</span>
               <span className="text-md">Explore Now!</span>
