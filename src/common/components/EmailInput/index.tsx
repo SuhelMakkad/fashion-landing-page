@@ -9,7 +9,7 @@ const EmailInput = () => {
         placeholder="Add your email here"
       />
 
-      <Button intent={"monochrome"} size={"large"} focusOutlined uppercase>
+      <Button intent={"monochrome"} size={"medium"} focusOutlined uppercase>
         Send
       </Button>
     </div>

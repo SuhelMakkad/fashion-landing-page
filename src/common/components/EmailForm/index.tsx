@@ -5,7 +5,7 @@ const EmailForm = () => {
     <section
       className={`
         flex flex-col gap-8 px-4 py-24
-        full-bleed bg-yellow-300 shadow-yellow-300 shadow-[0_0_0_100vmax]
+        full-bleed bg-yellow-400 shadow-yellow-400 shadow-[0_0_0_100vmax]
       `}
     >
       <h4 className="text-4xl  mx-auto font-bold max-w-xl text-center text-white uppercase">

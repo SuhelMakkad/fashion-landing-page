@@ -7,7 +7,7 @@ const SaleSection = () => {
     <section
       className={`
 				flex items-center gap-8 max-lg:flex-col-reverse max-lg:mx-auto max-w-full
-				full-bleed bg-yellow-300 shadow-yellow-300  shadow-[0_0_0_100vmax]
+				full-bleed bg-yellow-400 shadow-yellow-400  shadow-[0_0_0_100vmax]
       `}
     >
       <div className="relative">

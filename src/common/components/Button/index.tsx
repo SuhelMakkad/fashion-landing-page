@@ -10,9 +10,9 @@ const button = cva(["font-medium", "transition"], {
       secondary: ["bg-white", "text-gray-800", "border-gray-400", "hover:bg-gray-100"],
     },
     size: {
-      small: ["text-sm", "py-1.5", "px-3", "rounded"],
-      medium: ["text-base", "py-2", "px-4", "rounded-md"],
-      large: ["text-lg", "py-2.5", "px-6", "rounded-lg"],
+      small: ["text-sm", "py-2", "px-4", "rounded"],
+      medium: ["text-base", "py-2.5", "px-5", "rounded-md"],
+      large: ["text-lg", "py-3", "px-8", "rounded-lg"],
     },
     uppercase: {
       true: "uppercase",
