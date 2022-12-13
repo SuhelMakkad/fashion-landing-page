@@ -6,9 +6,9 @@ import type { VariantProps } from "class-variance-authority";
 const ulList = cva(
   [
     "flex gap-6 items-center max-lg:items-start max-lg:flex-col max-lg:gap-0",
-    "max-lg:absolute top-16 left-0 right-0 uppercase shadow-xl",
+    "max-lg:absolute top-16 left-0 right-0",
     "max-lg:mx-4 max-lg:p-2 max-lg:bg-white max-lg:text-gray-800",
-    "rounded",
+    "rounded uppercase max-lg:shadow-xl origin-top animate-slide-in",
   ],
   {
     variants: {
