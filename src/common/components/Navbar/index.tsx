@@ -5,6 +5,7 @@ import useOnClickOutside from "@/hooks/useOnClickOutside";
 import Logo from "@/components/Logo";
 import Button from "@/components/Button";
 import MenuSwitch from "@/components/MenuSwitch";
+import ThemeSwitch from "@/components/ThemeSwitch";
 import NavList from "./NavList";
 
 const Navbar = () => {
@@ -48,6 +49,10 @@ const Navbar = () => {
       `}
     >
       <Logo />
+
+      <div className="ml-auto mr-8">
+        <ThemeSwitch />
+      </div>
 
       <div className="flex items-center gap-4 justify-between max-lg:flex-row-reverse">
         <div ref={menuRef}>

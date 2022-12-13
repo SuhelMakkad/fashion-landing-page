@@ -28,7 +28,7 @@ const ProductList = ({ products, ...variants }: ProductProps) => {
   return (
     <ul className={productList(variants)}>
       {products.map((product) => (
-        <li className="flex flex-col gap-4 cursor-pointer">
+        <li key={product.title} className="flex flex-col gap-4 cursor-pointer">
           <img
             className="object-cover object-top hover:shadow-2xl transition-shadow rounded-xl group-[.medium]:h-80"
             src={product.imgUrl}
