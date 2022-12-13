@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <div className="flex items-center gap-2 text-2xl font-bold uppercase">
+    <a href="#" className="flex items-center gap-2 text-2xl font-bold uppercase">
       <svg
         className="fill-black dark:fill-white"
         width="1em"
@@ -12,7 +12,7 @@ const Logo = () => {
       </svg>
 
       <span>fashion</span>
-    </div>
+    </a>
   );
 };
 
