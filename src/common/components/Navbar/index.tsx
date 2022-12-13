@@ -42,10 +42,8 @@ const Navbar = () => {
   return (
     <nav
       className={`
-        full-bleed bg-white/75 shadow-white/75  dark:bg-slate-900/75 dark:shadow-slate-900/75 shadow-[0_0_0_100vmax]
         dark:text-white flex items-center justify-between
-        sticky top-0 left-0 right-0 
-        z-10 py-5 backdrop-blur-md
+        sticky top-0 left-0 right-0 z-10 py-5
       `}
     >
       <Logo />
