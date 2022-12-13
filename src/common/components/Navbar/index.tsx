@@ -39,7 +39,7 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="flex items-center justify-between py-3 relative">
+    <nav className="flex items-center justify-between py-3 sticky top-0 left-0 right-0 z-10">
       <Logo />
 
       <div className="flex items-center gap-4 justify-between max-lg:flex-row-reverse">

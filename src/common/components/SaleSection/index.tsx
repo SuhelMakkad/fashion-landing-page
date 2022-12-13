@@ -22,7 +22,7 @@ const SaleSection = () => {
         <BgStar className="opacity-80 left-20 bottom-32 -rotate-90" />
       </div>
 
-      <div className="mb-8 mx-auto max-lg:text-center max-lg:mt-12">
+      <div className="flex flex-col gap-4 mb-8 max-lg:mt-14 mx-auto max-lg:text-center">
         <h3
           className={`
             text-6xl max-lg:text-5xl max-md:text-4xl font-bold leading-tight
@@ -35,13 +35,13 @@ const SaleSection = () => {
           Spend minimal $100 get 30% off voucher code for your next purchase
         </p>
 
-        <p className="mt-4">
+        <p>
           <span className="font-bold">1 June - 10 June 2021</span>
           <br />
           <span>*Terms & Conditions apply</span>
         </p>
 
-        <div className="mt-4">
+        <div>
           <Button intent={"monochrome"} size={"large"} elevated>
             Shope Now
           </Button>

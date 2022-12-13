@@ -8,7 +8,7 @@ const ulList = cva(
     "flex gap-6 items-center max-lg:items-start max-lg:flex-col max-lg:gap-0",
     "max-lg:absolute top-16 left-0 right-0",
     "max-lg:mx-4 max-lg:p-2 max-lg:bg-white max-lg:text-gray-800",
-    "rounded uppercase max-lg:shadow-xl origin-top animate-slide-in",
+    "rounded uppercase max-lg:shadow-xl origin-top max-lg:animate-slide-in",
   ],
   {
     variants: {
@@ -38,7 +38,10 @@ const NavList = ({ items, active, ...props }: NavListProps) => {
       {items.map((item, index) => (
         <li key={index} className={`w-full`}>
           <a
-            className={`max-lg:hover:bg-gray-200 w-full max-lg:px-4 max-lg:py-2 rounded block transition-colors`}
+            className={`
+              block w-full rounded transition-colors relative
+              max-lg:hover:bg-gray-200 max-lg:px-4 max-lg:py-2
+            `}
             href={item.href}
           >
             {item.label}

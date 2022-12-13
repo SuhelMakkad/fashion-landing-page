@@ -2,7 +2,7 @@ import { HTMLAttributes } from "react";
 
 const Heading = ({ children, className, ...props }: HTMLAttributes<HTMLHeadingElement>) => {
   return (
-    <h3 {...props} className={`${className} text-4xl font-bold`}>
+    <h3 {...props} className={`${className} text-4xl max-lg:text-2xl font-bold`}>
       <span className="relative">
         {children}
         <svg

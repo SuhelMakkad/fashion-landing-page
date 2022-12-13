@@ -6,11 +6,11 @@ const AppShowCase = () => {
   return (
     <section className="flex items-center max-lg:flex-col-reverse justify-around gap-8 max-lg:text-center overflow-hidden">
       <div className="flex flex-col gap-8">
-        <h3 className="text-3xl font-bold">
+        <h3 className="text-3xl max-lg:text-2xl font-bold">
           DOWNLOAD APP & <br /> GET THE VOUCHER!
         </h3>
 
-        <p className="max-w-sm">
+        <p className="max-w-sm text-base max-lg:text-sm">
           Get 30% off for first transaction using Rondovision mobile app for now.
         </p>
 
