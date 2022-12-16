@@ -81,56 +81,70 @@ const Footer = () => {
   return (
     <footer
       className={`
-        flex gap-12 py-12 text-white max-lg:flex-col max-lg:items-center max-lg:text-center
         full-bleed bg-black shadow-black shadow-[0_0_0_100vmax] dark:bg-gray-900 dark:shadow-gray-900
-    `}
+        text-white max-lg:text-center
+      `}
     >
-      <div className="flex flex-col gap-4">
-        <h6 className="text-2xl font-bold">FASHION</h6>
-        <span className="text-gray-400 max-w-xs">
-          Complete your style with awesome clothes from us.
-        </span>
+      <div className={`flex gap-12 py-12 max-lg:flex-col max-lg:items-center`}>
+        <div className="flex flex-col gap-4">
+          <h6 className="text-2xl font-bold">FASHION</h6>
+          <span className="text-gray-400 max-w-xs">
+            Complete your style with awesome clothes from us.
+          </span>
 
-        <ul className="flex gap-6 max-lg:mx-auto">
-          {socialMediaList.map((item, index) => (
-            <li key={index}>
-              <a
-                className="block text-gray-200 hover:text-white hover:-translate-y-0.5 transition-all"
-                href={item.href}
-                target="_blank"
-              >
-                <item.Icon className="text-2xl fill-current" />
-              </a>
-            </li>
+          <ul className="flex gap-6 max-lg:mx-auto">
+            {socialMediaList.map((item, index) => (
+              <li key={index}>
+                <a
+                  className="block text-gray-200 hover:text-white hover:-translate-y-0.5 transition-all"
+                  href={item.href}
+                  target="_blank"
+                >
+                  <item.Icon className="text-2xl fill-current" />
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <span className="text-gray-500 hover:text-gray-300 transition-colors">
+            <a target="_blank" href="https://icons8.com">
+              Icons by Icons8
+            </a>
+          </span>
+        </div>
+
+        <div className="flex max-lg:flex-wrap gap-28 justify-end max-lg:justify-center flex-1 capitalize">
+          {footerItems.map((item) => (
+            <div key={item.label}>
+              <span>{item.label}</span>
+              <ul className="flex flex-col gap-4 mt-4">
+                {item.links.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      className="text-gray-400 hover:text-gray-200 transition-colors"
+                      href={link.href}
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ul>
-
-        <span className="text-gray-500 hover:text-gray-300 transition-colors">
-          <a target="_blank" href="https://icons8.com">
-            Icons by Icons8
-          </a>
-        </span>
+        </div>
       </div>
 
-      <div className="flex max-lg:flex-wrap gap-28 justify-end max-lg:justify-center flex-1 capitalize">
-        {footerItems.map((item) => (
-          <div key={item.label}>
-            <span>{item.label}</span>
-            <ul className="flex flex-col gap-4 mt-4">
-              {item.links.map((link) => (
-                <li key={link.label}>
-                  <a
-                    className="text-gray-400 hover:text-gray-200 transition-colors"
-                    href={link.href}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
+      <p className={`text-gray-300 text-sm text-center py-4`}
+      >
+        <span> Design from </span>
+        <a 
+          target="_blank"
+          className="text-gray-200 hover:text-gray-50 underline transition-colors"
+          href="https://www.uistore.design/items/shopping-free-landing-page-for-figma/"
+        >
+          uistore
+        </a>
+      </p>
     </footer>
   );
 };
