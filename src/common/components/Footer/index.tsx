@@ -62,19 +62,19 @@ const Footer = () => {
   const socialMediaList = [
     {
       Icon: GithubIcon,
-      href: "#",
-    },
-    {
-      Icon: InstagramIcon,
-      href: "#",
+      href: "https://github.com/suhelmakkad",
     },
     {
       Icon: LinkedinIcon,
-      href: "#",
+      href: "https://www.linkedin.com/in/suhel-makkad-606a3219b/",
+    },
+    {
+      Icon: InstagramIcon,
+      href: "https://www.instagram.com/suhel_makkad/",
     },
     {
       Icon: TwitterIcon,
-      href: "#",
+      href: "https://twitter.com/suhel_makad",
     },
   ];
 
@@ -97,8 +97,9 @@ const Footer = () => {
               <a
                 className="block text-gray-200 hover:text-white hover:-translate-y-0.5 transition-all"
                 href={item.href}
+                target="_blank"
               >
-                <item.Icon className="text-3xl fill-current" />
+                <item.Icon className="text-2xl fill-current" />
               </a>
             </li>
           ))}
