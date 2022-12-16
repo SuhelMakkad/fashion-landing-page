@@ -42,7 +42,6 @@ const Navbar = () => {
   return (
     <nav
       className={`
-        full-bleed bg-white/90 dark:bg-gray-900/90 shadow-white/90 dark:shadow-gray-900/90 shadow-[0_0_0_100vmax]
         dark:text-white flex items-center justify-between
         sticky top-0 left-0 right-0 z-10 py-5
       `}
@@ -53,7 +52,7 @@ const Navbar = () => {
         <ThemeSwitch />
       </div>
 
-      <div className="flex items-center gap-4 justify-between max-lg:flex-row-reverse">
+      <div className="flex items-center gap-16 max-lg:gap-10 justify-between max-lg:flex-row-reverse">
         <div ref={menuRef}>
           <MenuSwitch
             className="hidden max-lg:block "
