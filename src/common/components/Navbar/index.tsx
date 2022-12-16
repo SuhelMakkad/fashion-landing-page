@@ -42,6 +42,7 @@ const Navbar = () => {
   return (
     <nav
       className={`
+        full-bleed bg-white/90 dark:bg-gray-900/90 shadow-white/90 dark:shadow-gray-900/90 shadow-[0_0_0_100vmax]
         dark:text-white flex items-center justify-between
         sticky top-0 left-0 right-0 z-10 py-5
       `}
