@@ -17,10 +17,17 @@ const HeroSection = () => {
           className={`
             text-6xl max-lg:text-5xl max-md:text-4xl font-bold 
             w-min max-lg:w-auto 
-            leading-tight
+            leading-tight isolate
           `}
         >
-          LET'S EXPLORE UNIQUE CLOTHES.
+          <span> LET'S EXPLORE </span>  
+          <span className={`
+            relative after:absolute after:top-0 after:bottom-0 after:-left-4 after:-right-12  max-lg:after:-right-6
+            after:bg-yellow-200 after:skew-x-3 after:-skew-y-2 after:-z-10
+          `}> 
+            UNIQUE 
+          </span>
+          <span> CLOTHES. </span>  
         </h1>
 
         <h2 className="text-lg">Live for Influential and Innovative fashion!</h2>
