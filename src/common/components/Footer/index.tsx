@@ -134,12 +134,12 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className={`text-gray-300 text-sm text-center py-4`}
+      <p className={`text-gray-400 text-sm text-center py-4`}
       >
         <span> Design from </span>
         <a 
           target="_blank"
-          className="text-gray-200 hover:text-gray-50 underline transition-colors"
+          className="hover:text-gray-200 underline transition-colors"
           href="https://www.uistore.design/items/shopping-free-landing-page-for-figma/"
         >
           uistore
