@@ -22,8 +22,8 @@ const HeroSection = () => {
         >
           <span> LET'S EXPLORE </span>  
           <span className={`
-            relative after:absolute after:top-0 after:bottom-0 after:-left-4 after:-right-12  max-lg:after:-right-6
-            after:bg-yellow-200 after:skew-x-3 after:-skew-y-2 after:-z-10
+            relative after:absolute after:top-0 after:bottom-0 after:-left-4 after:-right-12 max-lg:after:-right-6
+            after:bg-white dark:after:bg-gray-400 after:skew-x-3 after:-skew-y-2 after:-z-10
           `}> 
             UNIQUE 
           </span>
