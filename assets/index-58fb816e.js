@@ -10,6 +10,7 @@ Error generating stack: `+o.message+`
               max-lg:hover:bg-gray-200 max-lg:px-4 max-lg:py-2
               max-lg:dark:hover:bg-slate-900
             `,href:r.href,children:r.label})},l))}),Yd=()=>{const e=[{label:"catalogue",href:"#"},{label:"fashion",href:"#"},{label:"favorite",href:"#"},{label:"lifestyle",href:"#"}],[t,n]=ft.exports.useState(!1),r=ft.exports.useRef(null),l=()=>{n(o=>!o)};return jd(r,()=>{n(!1)}),D("nav",{className:`
+        full-bleed bg-white/90 dark:bg-gray-900/90 shadow-white/90 dark:shadow-gray-900/90 shadow-[0_0_0_100vmax]
         dark:text-white flex items-center justify-between
         sticky top-0 left-0 right-0 z-10 py-5
       `,children:[m(Ud,{}),m("div",{className:"ml-auto mr-8",children:m(Vd,{})}),D("div",{className:"flex items-center gap-4 justify-between max-lg:flex-row-reverse",children:[D("div",{ref:r,children:[m(Hd,{className:"hidden max-lg:block ",active:t,onClick:l}),m(Wd,{items:e,active:t})]}),m(wl,{className:"ml-auto",intent:"monochrome",size:"small",uppercase:!0,elevated:!0,children:"sign up"})]})]})},Nt=({className:e,...t})=>m("svg",{...t,className:`${e} fill-slate-200 -z-10 absolute`,width:"45",height:"40",viewBox:"0 0 56 51",xmlns:"http://www.w3.org/2000/svg",children:m("path",{d:"M28 0L34.5109 19.3554H55.5806L38.5349 31.3177L45.0458 50.673L28 38.7108L10.9542 50.673L17.4651 31.3177L0.419361 19.3554H21.4891L28 0Z"})}),Xd="/fashion-landing-page/assets/1-6f8300ef.png",Kd=()=>D("section",{className:`
