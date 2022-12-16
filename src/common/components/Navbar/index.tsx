@@ -48,11 +48,11 @@ const Navbar = () => {
     >
       <Logo />
 
-      <div className="ml-auto mr-8">
+      <div className="ml-auto mr-8 max-md:mr-2">
         <ThemeSwitch />
       </div>
 
-      <div className="flex items-center gap-16 max-lg:gap-10 justify-between max-lg:flex-row-reverse">
+      <div className="flex items-center gap-16 max-lg:gap-10 max-md:gap-4 justify-between max-lg:flex-row-reverse">
         <div ref={menuRef}>
           <MenuSwitch
             className="hidden max-lg:block "
