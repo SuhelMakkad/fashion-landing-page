@@ -31,7 +31,7 @@ Error generating stack: `+o.message+`
 				flex items-center gap-8 max-lg:flex-col-reverse max-lg:mx-auto max-w-full
 				full-bleed bg-yellow-400 shadow-yellow-400  shadow-[0_0_0_100vmax]
       `,children:[T("div",{className:"relative",children:[m("img",{className:"max-lg:max-h-96 max-w-full drop-shadow-[4rem_3rem_1.5rem_rgba(0,0,0,0.5)]",src:cp}),m(Nt,{className:"opacity-80 left-12 top-24 rotate-45"}),m(Nt,{className:"opacity-80 right-12 top-12 -rotate-45"}),m(Nt,{className:"opacity-80 right-12 bottom-16 rotate-90"}),m(Nt,{className:"opacity-80 left-20 bottom-32 -rotate-90"})]}),T("div",{className:"flex flex-col gap-4 mb-8 max-lg:mt-14 mx-auto max-lg:text-center",children:[T("h3",{className:`
-            text-6xl max-lg:text-5xl max-md:text-4xl font-bold leading-tight uppercase isolate
+            text-6xl max-lg:text-5xl max-md:text-4xl dark:text-black font-bold leading-tight uppercase isolate
         `,children:[m("span",{className:`
             relative after:absolute after:top-0 after:bottom-0 after:-left-4 after:-right-12 max-lg:after:-right-6
             after:bg-white after:skew-x-3 after:-skew-y-1 after:-z-10
