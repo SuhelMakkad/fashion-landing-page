@@ -25,7 +25,7 @@ const SaleSection = () => {
       <div className="flex flex-col gap-4 mb-8 max-lg:mt-14 mx-auto max-lg:text-center">
         <h3
           className={`
-            text-6xl max-lg:text-5xl max-md:text-4xl font-bold leading-tight uppercase isolate
+            text-6xl max-lg:text-5xl max-md:text-4xl dark:text-black font-bold leading-tight uppercase isolate
         `}
         >
           <span className={`
